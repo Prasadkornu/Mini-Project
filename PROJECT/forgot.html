@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forgot Password </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="forgot.css">	
+		<script src=""></script>
+	</head>
+	<body>
+		<div class="head">
+		<h3 style="margin-left: 50px;">RESET <span>PASSWORD</span></h3>
+		<div class="forgot">
+			<div class="a">
+				<form action="forgot.php" method="POST">
+				<input type="text" placeholder="Enter your ID" name="id" >
+			</div><br>
+			
+			<div>
+               <select class="p" name="que1">
+                 <option value="1"> What is your pet name? </option>
+                 <option value="2"> What is nickname? </option>
+                  <option value="3"> What is first School name? </option>
+            </select>
+                 <input style="position: relative; top: 20px;" type="text" name="ans1" placeholder="Enter your Answer">
+           </div>
+			<div>
+				<input style="margin-top: 38px;" type="password" placeholder=" Enter New Password" name="pass1">
+			</div><br>
+			<div>
+				<input type="password" placeholder="Confirm password" name="pass2">
+			</div><br>
+				</div>
+                <input type="submit" class="h" style="margin-top: 30px; margin-left: 100px; padding: 7px 20px; border-radius: 10px; cursor: pointer;"    type="reset" name="" placeholder="reset" >
+        </div>
+
+		  </form>
+	</body>
+</html>
+

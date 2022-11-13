@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SIGN UP </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="forgot.css"> 
+    <script src=""></script>
+  </head>
+  <body>
+    <div class="head">
+    <h3 style="margin-left: 100px;">SIGN <span style="color: #f1575b ;">UP</span></h3>
+    <div class="forgot">
+      <form action="signup.php" method="POST">
+      <div>
+        <input type="text" name="id" placeholder="Id Number"(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,} >
+      </div><br>
+      <div>
+        <input type="text" name="fname" placeholder=" Name">
+      </div><br>
+      <div>
+        <input type="password" name="pass1" placeholder=" Password" >
+      </div><br>
+      <div>
+        <input  type="password" name="pass2" placeholder="Confirm password">
+      </div><br>
+      <div>
+        <select class="p" name="que" style="width: 220px;">
+          <option value="1"> What is your pet name? </option>
+          <option value="2"> What is your nickname? </option>
+          <option value="3"> What is your first School name? </option>
+        </select>
+        <input style="position: relative; top: 20px;" type="text" name="ans" placeholder="Enter your Answer">
+      </div>
+        
+    </div>
+        <input class="h" style="margin-top: 45px; margin-left: 100px; padding: 7px 20px; border-radius: 10px ; cursor: pointer; background-color: #f9004d;" type="Submit" name="Sign Up">
+        </form>
+        </div>
+  </body>
+</html>
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Responsive Sidebar Menu</title> -->
+    <link rel="stylesheet" href="dash.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body >
+    <div class="main">
+    <div class="navbar">
+      <div class="logo">
+        
+        <h4>RGUKT HOSPITAL MANAGEMENT SYSTEM </h4>
+        <img style="height: 700px; width: 1200px; position: relative; right: 155px; " src="admin.jpg">
+      </div>  
+      <div class="Bord"></div>        
+    <div class="sidebar">
+      <a href="#" class="active">
+        
+        <span>Admin Dashboard</span>
+      <a href="doctorlist.php">
+       
+        <span>Add doctors</span>
+      </a>
+      <a href="hms.html">
+        
+        <span> Logout</span>
+      </a>
+    </div>
+    <div id="content">
+        <button style="background: red;cursor: pointer;" onclick="appoint()"></button>
+    </div>
+    </div>
+  </div>
+<script>
+  function appoint() 
+  {let t= document.getElementById('content');
+   t.load("Appoint.html");
+  }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <title> RGUKT HMS </title>
+ <link rel="stylesheet" type="text/css" href="hms.css">
+ <link rel="stylesheet" type="text/css" href="signin.css">
+ </head>
+ <body   style=	"background-color:#4275f5;" >
+  
+   <div class="nav">
+    <div >
+      <img src="images.png" height="40px" width="40px" style="border-radius: 20px;position: relative; top: 15px;">
+    <li ><b style="font-family: 'josefin sans',sans-serif;">RGUKT HOSPITAL MANAGEMENT SYSTEM </b></li>
+   </div>
+
+      <ul>
+      
+      <li> <a class="about" href="about.html">ABOUT US</a></li>
+      <li> <a  class="admin" href="contact.html">CONTACT US</a></li>
+     </ul>
+    
+  </div>
+
+  <div class="m" >
+        
+      <div  >
+       <button class="s" id="m1" href="hms.html" onclick="student()" style="font-weight: bold;
+    background: #4296f5;position: relative; left: 200px;border-radius: 20px;" >Student</button>
+       <button class="s" id="m2" href="hms.html" onclick="doctor()" style="position: relative; left: 250px; ">Doctor</button>
+       <button class="s" id="m3" href="hms.html" onclick="pharm()" style="position: relative; left: 300px;">Pharmacist</button>
+      <button class="s" id="m4" href="hms.html" onclick="admin()" style="position: relative; left: 350px;">Admin</button>
+       
+  
+       </div>
+
+     <!--STUDENT LOGIN -->
+
+         <div class="student" style="position: relative;right: 30px; bottom: 80px;">
+            <p  id="sign" align="center" style="position: relative; right:45px"> Student Sign in</p>
+
+
+              <form class="form1" action="login.php" method="POST">
+                <input class="un " type="text" align="center" placeholder="User id" name="id" required>
+                <input class="pass" type="password" align="center" placeholder="Password" name="pass" required>
+                <input type="submit" class="btn" style="position: relative; left: 48px;">
+
+              </form>
+                <p class="forgot" align="center"><a href="forgot.html"style="position: relative; top: 5px; left: 5px;">Forgot Password?</p>
+                <p  id ="signup" align="center"><a href="signup1.html"style="color:rgb(38, 50, 56); font-weight: 700; position: relative; top:65px ; left: 20px; "> Don't have account? <u>SignUp</u></p>
+          </div>
+
+        
+
+     </div>
+      
+    <div style="margin-top: 400px;">
+    
+      
+  </div>
+
+    <div>
+         <img src="rgukt.png" style="position: relative; bottom: 300px; left: 170px; height: 270px; ">
+   </div>
+
+  
+<script>
+  document.getElementById("sign").innerHTML="Student Sign in";
+    document.getElementById("m1").style.background="#4296f5";
+    document.getElementById("m2").style.background="white";
+    document.getElementById("m3").style.background="white";
+    document.getElementById("m4").style.background="white";
+  function student()
+  {
+    document.getElementById("sign").innerHTML="Student Sign in";
+    document.getElementById("m1").style.background="#4296f5";
+    document.getElementById("m2").style.background="white";
+    document.getElementById("m3").style.background="white";
+    document.getElementById("m4").style.background="white";
+    document.getElementById("signup").style.display= "block";
+    document.getElementById("m1").style.borderRadius= "20px";
+
+  }
+  function doctor()
+  {
+    document.getElementById("sign").innerHTML="Doctor Sign in";
+    document.getElementById("m2").style.background="#4296f5";
+    document.getElementById("m1").style.background="white";
+    document.getElementById("m3").style.background="white";
+    document.getElementById("m4").style.background="white";
+    document.getElementById("signup").style.display = "none";
+    document.getElementById("m2").style.borderRadius= "20px";
+  }
+  function pharm()
+  {
+    document.getElementById("sign").innerHTML="Pharmacist Sign in";
+    document.getElementById("m3").style.background="#4296f5";
+    document.getElementById("m1").style.background="white";
+    document.getElementById("m2").style.background="white";
+    document.getElementById("m4").style.background="white";
+    document.getElementById("signup").style.display = "none";
+    document.getElementById("m3").style.borderRadius= "20px";
+  }
+  function admin()
+  {
+    document.getElementById("sign").innerHTML="Admin Sign in";
+    document.getElementById("m4").style.background="#4296f5";
+    document.getElementById("m1").style.background="white";
+    document.getElementById("m3").style.background="white";
+    document.getElementById("m2").style.background="white";
+    document.getElementById("signup").style.display = "none";
+    document.getElementById("m4").style.borderRadius= "20px";
+  }
+</script>
+
+  </body>
+  </html>
